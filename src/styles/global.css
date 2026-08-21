@@ -1,0 +1,17 @@
+html {
+  background-image: url("/backgrounds/sky-background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+}
+
+body {
+  width: 80%;
+  max-width: 1000px;
+  margin: 150px auto;
+  padding: 5px;
+  color: #333;
+  font-family: "MS PGothic", "Yu Gothic", Arial, sans-serif;
+  font-size: 14px;
+  border: 4px groove #ccc;
+}
