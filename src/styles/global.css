@@ -1,5 +1,5 @@
 html {
-  background-image: url("japanese-blog/backgrounds/sky-background.jpg");
+  background-image: url("/japanese-blog/backgrounds/sky-background.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100%;
@@ -27,16 +27,22 @@ main {
 main img {
   display: block;
   margin: 0 auto;
+  padding: 0px 0px 20px 0px;
 }
 
 aside {
   flex: 0 0 150px;
   border-right: 4px groove #ccc;
+  padding: 0px 0px 0px 10px;
 }
 
 aside img {
   display: block;
   margin: 0 auto;
+}
+
+section {
+  padding-left: 20px;
 }
 
 footer {
@@ -49,4 +55,5 @@ footer {
 
 body {
   cursor: url(/japanese-blog/cursor.png), auto;
+  font-family: "Hina Mincho", sans-serif;
 }
