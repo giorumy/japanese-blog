@@ -11,12 +11,12 @@ header {
   margin: 20px auto;
   text-align: center;
   color: red;
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 20px;
 }
 
 main {
-  margin: 100px auto;;
+  margin: 20px auto 100px;
   display: flex;
   color: #333;
   font-size: 18px;
@@ -54,6 +54,6 @@ footer {
 }
 
 body {
-  cursor: url(/japanese-blog/cursor.png), auto;
+  cursor: url(/japanese-blog/cursor.png) 0 0, auto;
   font-family: "Hina Mincho", sans-serif;
 }
