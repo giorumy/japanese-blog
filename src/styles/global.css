@@ -1,5 +1,5 @@
 html {
-  background-image: url("/backgrounds/sky-background.jpg");
+  background-image: url("japanese-blog/backgrounds/sky-background.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100%;
@@ -13,33 +13,40 @@ header {
   color: red;
   margin-top: 100px;
   font-size: 20px;
-  font-family: "MS PGothic", "Yu Gothic", Arial, sans-serif;
 }
 
 main {
-  width: 80%;
-  max-width: 1000px;
-  margin: 100px auto;
-  padding: 5px;
+  margin: 100px auto;;
+  display: flex;
   color: #333;
-  font-family: "MS PGothic", "Yu Gothic", Arial, sans-serif;
   font-size: 18px;
   border: 4px groove #ccc;
+  width:700px;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
 }
 
 aside {
-    position: relative;
-    float: left;
-    width: 170px;
-    top: 0px;
-    bottom: 0px;
+  flex: 0 0 150px;
+  border-right: 4px groove #ccc;
+}
+
+aside img {
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto;
-    color: #666;
-    font-size: 14px;
-    font-family: "MS PGothic", "Yu Gothic", Arial, sans-serif;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  color: #666;
+  font-size: 14px;
+}
+
+body {
+  cursor: url(/japanese-blog/cursor.png), auto;
 }
