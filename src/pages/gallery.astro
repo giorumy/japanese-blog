@@ -1,18 +1,11 @@
 ---
-
+import BlogLayout from "../layouts/blog-layout.astro";
 ---
 
-<html lang="ja">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/caticon.svg" />
-		<link rel="icon" href="/caticon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Gallery</title>
-	</head>
-	<body>
-		<h1>Gallery</h1>
-        <img src="/japanese-blog/gifs/construction.gif" alt="Description of the animation" width="300" height="200">
-	</body>
-</html>
+<BlogLayout>
+
+  <h2>ギャラリー</h2>
+
+  <img src="/japanese-blog/gifs/construction.gif" alt="Description of the animation" width="300" height="200">
+
+</BlogLayout>

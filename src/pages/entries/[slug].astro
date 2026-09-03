@@ -1,0 +1,39 @@
+---
+import BlogLayout from "../../layouts/blog-layout.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("entries");
+
+  return entries.map((entry) => ({
+    params: {
+      slug: entry.id,
+    },
+    props: {
+      entry,
+    },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BlogLayout>
+
+  <article>
+    <h2>{entry.data.title}</h2>
+
+    <p>
+      {entry.data.date.toLocaleDateString("ja-JP", {
+        timeZone: "UTC",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    　})}
+    </p>
+
+    <Content />
+  </article>
+
+</BlogLayout>

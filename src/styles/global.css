@@ -27,13 +27,17 @@ main {
 main img {
   display: block;
   margin: 0 auto;
-  padding: 0px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 aside {
   flex: 0 0 150px;
   border-right: 4px groove #ccc;
-  padding: 0px 0px 0px 10px;
+  padding: 0;
+}
+
+aside h2 {
+  padding-left: 10px;
 }
 
 aside img {
@@ -43,6 +47,7 @@ aside img {
 
 section {
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 footer {
@@ -55,4 +60,31 @@ footer {
 
 body {
   font-family: "Hina Mincho", sans-serif;
+}
+
+.gif-link {
+  text-align: left;
+}
+
+.line-gif {
+  display: inline;
+  margin: 10px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.entry-item h2 {
+  margin-bottom: 5px;
+}
+
+.entry-date {
+  margin: 0 0 2px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.entry-description {
+  margin-top: 0;
+  font-size: 14px;
+  color: #555;
 }

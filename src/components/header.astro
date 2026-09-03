@@ -1,0 +1,23 @@
+<header>
+  <h1>日本語ブログ</h1>
+
+  <audio id="meow" src="/japanese-blog/audio/meow.mp3"></audio>
+
+  <img
+    id="cat-image"
+    src="/japanese-blog/gifs/Cat Spinning Sticker by Jasi.gif"
+    alt="cat spinning"
+    width="150"
+  />
+
+  <script>
+    const audio = document.getElementById("meow") as HTMLAudioElement;
+    const cat = document.getElementById("cat-image");
+
+    audio.playbackRate = 2.0;
+
+    cat?.addEventListener("click", () => {
+      audio.play();
+    });
+  </script>
+</header>

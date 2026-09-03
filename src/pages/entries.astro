@@ -1,0 +1,39 @@
+---
+import BlogLayout from "../layouts/blog-layout.astro";
+import { getCollection } from "astro:content";
+
+const entries = await getCollection("entries");
+
+entries.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<BlogLayout>
+
+  <h2>エントリー</h2>
+
+  {entries.map((entry) => (
+    <article class="entry-item">
+      <h3 class="entry-title">
+        <a href={`/japanese-blog/entries/${entry.id}/`}>
+          {entry.data.title}
+        </a>
+      </h3>
+
+      <p class="entry-date">
+        {entry.data.date.toLocaleDateString("ja-JP", {
+          timeZone: "UTC",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+      </p>
+
+      <p class="entry-description">
+        {entry.data.description}
+      </p>
+    </article>
+  ))}
+
+</BlogLayout>

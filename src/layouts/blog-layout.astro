@@ -1,0 +1,98 @@
+---
+import "../styles/global.css";
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.cursors-4u.net/cursors/animated/cur45-9403b73c-32.css"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/japanese-blog/caticon.svg" />
+
+    <title>日本語ブログ</title>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>日本語ブログ</h1>
+
+      <audio id="meow" src="/japanese-blog/audio/meow.mp3"></audio>
+
+      <img
+        id="cat-image"
+        src="/japanese-blog/gifs/Cat Spinning Sticker by Jasi.gif"
+        alt="cat spinning"
+        width="150"
+      />
+
+      <script>
+        const audio = document.getElementById("meow") as HTMLAudioElement;
+        const cat = document.getElementById("cat-image");
+
+        audio.playbackRate = 2.0;
+
+        cat?.addEventListener("click", () => {
+          audio.play();
+        });
+      </script>
+    </header>
+
+    <main>
+
+      <aside>
+        <h2>メニュー</h2>
+
+        <ul>
+          <li><a href="/japanese-blog/">ホーム</a></li>
+          <li><a href="/japanese-blog/entries">エントリー</a></li>
+          <li><a href="/japanese-blog/gallery">ギャラリー</a></li>
+        </ul>
+
+        <img
+          src="/japanese-blog/gifs/I Love You Hearts Sticker.gif"
+          alt="heart spinning"
+          width="50"
+          height="50"
+        />
+      </aside>
+
+      <!-- Page-specific content goes here -->
+      <section>
+        <slot />
+      </section>
+
+    </main>
+
+    <footer>
+      <p>最終更新：2026年9月2日</p>
+      <p>© 2026 日本語ブログ</p>
+    </footer>
+
+    <audio
+      id="elevator-song"
+      src="/japanese-blog/audio/うつつ.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <script>
+      import "../scripts/mousetrail.js";
+
+      const elevatorAudio =
+        document.getElementById("elevator-song") as HTMLAudioElement;
+
+      elevatorAudio.volume = 0.1;
+    </script>
+
+  </body>
+</html>
