@@ -37,7 +37,7 @@ function init() {
     tinyv[i] = 0;
 
     // Main sparkle/star
-    const starSparkle = createDiv(5, 5);
+    const starSparkle = createDiv(10, 10);
 
     starSparkle.style.backgroundColor = "transparent";
     starSparkle.style.visibility = "hidden";
