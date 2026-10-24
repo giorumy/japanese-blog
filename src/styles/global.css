@@ -81,3 +81,17 @@ body {
 .border {
   border: 4px groove #ccc;
 }
+
+.image-pair {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.image-pair img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
