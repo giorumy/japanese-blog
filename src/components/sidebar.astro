@@ -1,4 +1,4 @@
-<aside>
+<aside class="sidebar">
   <h2>メニュー</h2>
 
   <ul>
@@ -14,3 +14,48 @@
     height="50"
   />
 </aside>
+
+<style>
+  .sidebar {
+  flex: 0 0 150px;
+  border-right: 4px groove #ccc;
+  padding: 0;
+  /* background-color: #888888; */
+}
+
+.sidebar h2 {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  border-bottom: 4px groove #ccc;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar li {
+    margin-bottom: 0px;
+  }
+
+  .sidebar li a {
+    display: block;
+    color: #5b0101;
+    text-decoration: none;
+    padding: 5px 12px;
+    transition: background-color 0.2s;
+  }
+
+  .sidebar li a:hover {
+    background-color: #888888;
+  }
+
+.sidebar img {
+  display: block;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+</style>

@@ -1,0 +1,27 @@
+
+/* Transparent backgrounds, black text and borders */
+
+main {
+  color-scheme: light;
+
+  --color-canvas-default: transparent;
+  --color-canvas-subtle: transparent;
+  --color-canvas-overlay: transparent;
+  --color-canvas-inset: transparent;
+  --color-neutral-muted: transparent;
+
+  --color-fg-default: #000000;
+  --color-fg-muted: #000000;
+
+  --color-border-default: #000000;
+  --color-border-muted: #000000;
+  --color-border-subtle: #000000;
+  --color-input-border: #000000;
+
+  --color-btn-bg: transparent;
+  --color-btn-border: #000000;
+  --color-btn-text: #000000;
+
+  --color-accent-fg: #000000;
+  --color-accent-emphasis: #000000;
+}

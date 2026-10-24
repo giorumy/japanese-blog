@@ -34,21 +34,6 @@ main video {
   margin: 0 auto;
 }
 
-aside {
-  flex: 0 0 150px;
-  border-right: 4px groove #ccc;
-  padding: 0;
-}
-
-aside h2 {
-  padding-left: 10px;
-}
-
-aside img {
-  display: block;
-  margin: 0 auto;
-}
-
 section {
   padding-left: 20px;
   padding-right: 20px;

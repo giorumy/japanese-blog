@@ -1,5 +1,8 @@
 ---
 import "../styles/global.css";
+import Header from "../components/header.astro";
+import Navbar from "../components/navbar.astro";
+import Sidebar from "../components/sidebar.astro";
 ---
 
 <html lang="ja">
@@ -23,48 +26,12 @@ import "../styles/global.css";
 
   <body>
 
-    <header>
-      <h1>日本語ブログ</h1>
-
-      <audio id="meow" src="/japanese-blog/audio/meow.mp3"></audio>
-
-      <img
-        id="cat-image"
-        src="/japanese-blog/gifs/Cat Spinning Sticker by Jasi.gif"
-        alt="cat spinning"
-        width="150"
-      />
-
-      <script>
-        const audio = document.getElementById("meow") as HTMLAudioElement;
-        const cat = document.getElementById("cat-image");
-
-        audio.playbackRate = 2.0;
-
-        cat?.addEventListener("click", () => {
-          audio.play();
-        });
-      </script>
-    </header>
+    <Header/>
+    <Navbar/>
 
     <main>
 
-      <aside>
-        <h2>メニュー</h2>
-
-        <ul>
-          <li><a href="/japanese-blog/">ホーム</a></li>
-          <li><a href="/japanese-blog/entries">エントリー</a></li>
-          <li><a href="/japanese-blog/gallery">ギャラリー</a></li>
-        </ul>
-
-        <img
-          src="/japanese-blog/gifs/I Love You Hearts Sticker.gif"
-          alt="heart spinning"
-          width="50"
-          height="50"
-        />
-      </aside>
+      <Sidebar />
 
       <!-- Page-specific content goes here -->
       <section>
@@ -74,7 +41,7 @@ import "../styles/global.css";
     </main>
 
     <footer>
-      <p>最終更新：2026年10月2日</p>
+      <p>最終更新：2026年10月23日</p>
       <p>© 2026 日本語ブログ</p>
     </footer>
 
